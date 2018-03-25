@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>brentgruenke.com</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-green fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Brent Gruenke</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home
+                     <span class="sr-only">(current)</span>
+                     </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:brent.gruenke@gmail.com">Email</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="img/web_safe_res.pdf" target="_blank">Résumé</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/brent-gruenke" target="_blank">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Page Heading -->
+        <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/drone/drone-strike.png" alt="First slide">
+                  <div class="carosel-caption">
+                     <p> Screenshot of Drone-strike.appspot.com</p>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <img class="d-block w-100" src="img/drone/drone-strike-close.jpg" alt="Second slide">
+               </div>
+               <div class="carousel-item">
+                  <img class="d-block w-100" src="img/drone/drone-strike-zoom.jpg" alt="Third slide">
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+         </div> -->
+        <div class="videoWrapper">
+            <iframe src="https://player.vimeo.com/video/259117744" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <div class="row">
+            <div class="col col-9" align="left">
+                <h4>Shocutz, a Shortcut Keyboard for Designers</h4>
+            </div>
+            <div class="col col-3">
+                <h4>Specs</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col col-9">
+                <p>Designers use a lot of shortcuts to maximize productivity whether it's coding, using Photoshop, or simply typing up a document. I hypothesize that a small portable micro-keyboard could be useful in the context of designers. Design software contains dozens of shortcuts; it's impossible to remember them all. Other shortcut keyboards are marketed towards gaming or media production and are <a href="https://www.amazon.com/Palette-Customizable-Controller-Lightroom-Photoshop/dp/B014E9543U/ref=sr_1_6?s=electronics&ie=UTF8&qid=1520536570&sr=1-6&keywords=photo%20editing%20keyboard" target="_blank" rel="noopener">prohibitively expensive</a>.
+                    </br>
+                    </br>
+                    Adobe Illustrator has over <a href="http://blogs.adobe.com/contentcorner/files/2017/03/Ai_CheatSheet_Windows.pdf" target="_blank" rel="noopener">100 shortcuts</a>. What if there was a way to streamline access to these shortcuts? Would an external USB device with quick shortcut keys be desirable and usable by designers? If so, what shape and features might the device contain?</p>
+
+                <h5>Goals</h5>
+                <ol>
+                    <li style="list-style-type: none;">
+                        <ol>
+                            <li>Determine the <span style="text-decoration: underline;">usability</span> of an external USB shortcut keyboard? Specifically, does it increase the efficiency or learn-ability of Adobe Illustrator.</li>
+                            </br>
+                            <li>Would something like this be <span style="text-decoration: underline;">desirable</span> by designers. Could they see themselves using a product like this in the future?</li>
+                        </ol>
+                    </li>
+                </ol>
+
+                <h5>Implementation</h5>
+                <p> Before I could start building anything I began sketching possible layouts and putting ideas to paper. I wasn't sure what I was going to be able to get done in two weeks or if I was even going to be able to get an Arduino to cooperate.</p>
+                <img src="img/shocutz/sketch1.jpg" class="img-fluid border col-sml-4" alt="Sketch 1" />
+                <!-- <img src="img/shocutz/sketch2.jpg" class="img-fluid border col-sml-8" alt="Sketch 2"/> -->
+                <!--<img src="img/shocutz/sketch3.jpg" class="img-fluid border" alt="Sketch 3"/> -->
+                <p>Next I began researching ways to make an Arduino work as a USB keyboard. I discovered that the Micro Pro and Leonardo are best suited for programming a Human Interface Device (HID) because of the <a href="https://www.arduino.cc/reference/en/language/functions/usb/keyboard/" target="_blank" rel="noopener">Keyboard.h</a> library. Unfortunately, I don't have either of those microcontrollers.</p>
+                <p>Being the cheap college student that I am, and too impatient to wait for shipping, I decided to try to make it work with an Arduino Uno. I did this based off of this 6 year old <a href="http://mitchtech.net/arduino-usb-hid-keyboard/" target="_blank" rel="noopener">tutorial</a> and the GitHub repository <a href="https://github.com/nylen/auto-f1-presser" target="_blank" rel="noopener">here</a>. Without this documentation I would have been completely lost.</p>
+                <p>The process for getting the Uno to work as a USB device is tedious but doable. In order to get the Uno to work as a USB device you must update the USB protocol with something called <a href="https://www.arduino.cc/en/Hacking/DFUProgramming8U2" target="_blank" rel="noopener">Device Firmware Update (DFU)</a>. This process flashes new firmware to the unit.</p>
+                <img src="img/shocutz/arduino_circle.png" class="img-fluid border" alt="how to short the UNO" />
+                <p>The workflow for programming the Uno this way is as follows:
+                    <pre>1. Upload Sketch in Arduino 
+2. While plugged in, Short the Arduino
+3. Use Atmel Flip (or DFU terminal commands on Mac or Linux) to upload Arduino-keyboard-0.3.hex 
+4. Power cycle the Uno 
+5. Test buttons and uploaded sketch
+6. Short the Uno again
+7. Ppload Arduino-usbserial-uno.hex with Flip
+8. Power cycle the Uno
+9. See that the com port detected the Uno
+10. Rinse and repeat until the desired shortcuts and sketch is uploaded</pre> This process is not ideal, but it works. Once I got this process down, I began modifying the example Arduino sketch. It took a while to figure out which hexadecimal keys were for which keyboard keys. I managed to find some very good <a href="https://hcdeblog.files.wordpress.com/2018/03/hid_keyboard_keys.pdf" target="_blank" rel="noopener">documentation</a> on it.</p>
+                <p>I also had to decide on which buttons to have the keyboard. Since I was testing usability, I decided I wanted to have a combination of commonly used keys and some more specialized keys. I ended up settling on Copy, Paste, Cut, I (Adobe Illustrator Eyedropper tool), Lock current layer (control + 2), and Save for Web (Control + Shift + Alt + S). I then uploaded this sketch to the unit.
+                    <pre>#define KEY_LEFT_CTRL 0x01
+#define KEY_LEFT_SHIFT 0x02
+#define KEY_LEFT_ALT 0x04
+
+uint8_t buf[8] = {
+ 0 }; /* Keyboard report buffer */
+
+#define PIN_COPY 7
+#define PIN_CUT 5
+#define PIN_PASTE 6
+#define PIN_EYEDROP 4
+#define PIN_LOCK 3
+#define PIN_SAVE 2
+
+int state = 1;
+
+void setup()
+{
+ Serial.begin(9600);
+
+pinMode(PIN_COPY, INPUT);
+ pinMode(PIN_CUT, INPUT);
+ pinMode(PIN_PASTE, INPUT);
+ pinMode(PIN_EYEDROP, INPUT);
+ pinMode(PIN_LOCK, INPUT);
+ pinMode(PIN_SAVE, INPUT);
+
+ // Enable internal pull-ups
+ digitalWrite(PIN_COPY, 1);
+ digitalWrite(PIN_CUT, 1);
+ digitalWrite(PIN_PASTE, 1);
+ digitalWrite(PIN_EYEDROP, 1);
+ digitalWrite(PIN_SAVE, 1);
+ digitalWrite(PIN_LOCK, 1);
+
+delay(200);
+}
+
+void loop()
+{
+ state = digitalRead(PIN_CUT);
+ if (state != 1) {
+ buf[0] = KEY_LEFT_CTRL; // Ctrl
+ buf[2] = 27; // Letter X
+ // buf[2] = 123; // Cut key: Less portable
+ Serial.write(buf, 8); // Ssend keypress
+ releaseKey();
+ }
+
+state = digitalRead(PIN_COPY);
+ if (state != 1) {
+ buf[0] = KEY_LEFT_CTRL; // Ctrl
+ buf[2] = 6; // Letter C
+ // buf[2] = 124; // Copy key: Less portable
+ Serial.write(buf, 8); // Send keypress
+ releaseKey();
+ }
+
+state = digitalRead(PIN_PASTE);
+ if (state != 1) {
+ buf[0] = KEY_LEFT_CTRL; // Ctrl
+ buf[2] = 25; // Letter V
+ // buf[2] = 125; // Paste key: Less portable
+ Serial.write(buf, 8); // Send keypress
+ releaseKey();
+ }
+
+state = digitalRead(PIN_EYEDROP);
+ if (state != 1) {
+ buf[0] = 0; // Empty Buffer[0]
+ buf[2] = 0x0C; // Letter I
+ Serial.write(buf, 8); // Send keypress
+ releaseKey();
+ }
+
+state = digitalRead(PIN_SAVE);
+ if (state != 1) {
+ buf[0] = KEY_LEFT_CTRL + KEY_LEFT_SHIFT + KEY_LEFT_ALT;
+ buf[2] = 0x16; //S Key
+ Serial.write(buf, 8); // Send keypress
+ releaseKey();
+ }
+
+state = digitalRead(PIN_LOCK);
+ if (state != 1) {
+ buf[0] = KEY_LEFT_CTRL;
+ buf[2] = 0x1F; // 2 Key
+ Serial.write(buf, 8); // Send keypress
+ releaseKey();
+ }
+}
+
+void releaseKey()
+{
+ buf[0] = 0;
+ buf[2] = 0;
+ Serial.write(buf, 8); // Release key
+ delay(500);
+}</pre> Below are some iterations of the prototype. I started with using card board to model possible layouts. I also used an Arduino plastic mounting bracket to organize the breadboard and Arduino. I finally laser cut labels and a case out of mat-board to hide the Uno as seen in my Evaluation of the prototype.
+                </p>
+                <img src="img/shocutz/breadboard.jpg" class="img-fluid border" alt="Early prototype of shocutz" />
+
+                <h5>Evaluation</h5>
+                <p> I was evaluating primarily the usability, but also the desirability of having a small keyboard shortcut for designers while using Adobe Illustrator. To test this I set up an informal usability test with five tasks and post-test questions.</p>
+                <img src="img/shocutz/testing.jpg" class="img-fluid border" alt="User testing of the keyboard" />
+                <p> I tested fellow HCDE students and asked them to complete these five tasks on my computer without the shortcut keyboard. Then I had them preform the same five tasks with the shortcut keyboard.</p>
+                <p> <b>Task 1: </b>On one layer, create 3 different colored rectangles on the artboard </br>
+
+                    <b>Task 2: </b>Color all the rectangles the same color </br>
+
+                    <b>Task 3: </b>Now lock 1 rectangle, keeping it from being altered. </br>
+
+                    <b>Task 4: </b>Now cut 2 of the shapes and put them on a new layer</br>
+
+                    <b>Task 5: </b>Save your artwork for the web </br>
+                    </br>
+                    <b>Post-test Questions</b>
+                    <ol>
+                        <li><span style="font-weight: 400;">How satisfied were you in completing those tasks?</span></li>
+                        <li><span style="font-weight: 400;">Was there anything that could be changed to make the design better? </span></li>
+                        <li><span style="font-weight: 400;">Could you see yourself using a design like this in the future?</span></li>
+                    </ol>
+                </p>
+
+                <h5>Analysis</h5>
+                <p>I received valuable feedback from participant 1 about placing buttons in a more intuitive way that mirrors Adobe Illustrators UI. From this feedback I also rearranged the layout for copy paste, and cut. Before testing, the button layout had paste, cut, copy which did not make sense logically for my first two usability study participants. Participant 1 also indicated that this would be helpful to newcomers to AI as well as professionals. Participant 2 was very satisfied with the lock to current layer and save for web buttons. He recommended making the keyboard more ergonomic by having a slightly angled interface. While participants were sitting they had to place their fingers straight down to push the buttons and read the labels. Overall, they both reacted positively to the prototype and noted it would take a while to learn how to integrate it into their workflow, but that it would be desirable to have. </p>
+                <img class="img-fluid border" src="img/shocutz/final.jpg" alt="final prototype with laser cut case" />
+                <img class="img-fluid border" src="img/shocutz/prototype.jpg" alt="final prototype with laser cut case" />
+                <p>Based on this feedback, I decided I was ready to laser cut an enclosure and test out an angled interface that might be more usable. You can see the progression of prototyping techniques above starting with cardboard, then mounting bracket + cardboard and finally laser cutting mat-board.</p>
+                <img class="img-fluid border" src="img/shocutz/testing_2.jpg" alt="User testing of Prototype" />
+            </div>
+
+            <div class="col col-3" align="left">
+                <p>
+                    Prototyping and Usability Testing</br>
+                    Arduino and Laser cutting</br>
+                    Shocutz logo credit to <a href="http://lucascolusso.github.io/portfolio/" target="_blank"> Lucas C. </a>
+                </p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col col-9">
+                <h5>Reflection</h5>
+                <p> I did more informal user testing at the Prototyping Open House. Many students were surprised and engaged by the functionality of the prototype. The general sentiment was that this would help them with complicated software. I did get more feedback on the mat-board enclosure and suggestions for increasing usability. The mat-board had more give that people expected and some people did not push the buttons down all the way. I plan to laser cut a better enclosure out of a more sturdy material. Additionally, the angle of the keyboard was awkward for many people to use while standing up so I plan to make a much shallower angle. Furthermore, I'd like to experiment with button types and button layouts for the future. It is critical that this device remain small and inexpensive in order for it to compete with other products currently on the market. A small change I would like to make is to program it for Mac OS instead of Windows. This will be a relatively simple change in the code switching control keys to command keys. The next step is creating a higher fidelity enclosure out of wood or plastic.</p>
+                <a href="" class="btn btn-outline-primary" onclick="goBack()">Back to Previous Page</a>
+                <a href="mealmatch.html" class="btn btn-outline-primary" role="button">Next Project</a>
+
+                <script>
+                    function goBack() {
+                        window.history.back();
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <!-- /.container -->
+    <!-- Footer -->
+    <footer class="nav-bar-fixed-bottom py-3 bg-green">
+        <div class="container">
+            <p class="m-0 text-left text-white">Coded from scratch (and Bootstrap) by Brent Gruenke &copy; 2018</p>
+        </div>
+        </container>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
