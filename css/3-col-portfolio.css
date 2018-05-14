@@ -3,10 +3,13 @@
      padding-top: 54px;
      color: #747373;
 }
+
  h4{
+     font-family: 'Work Sans', sans-serif;
      color: black;
 }
  h5{
+     font-family: 'Work Sans', sans-serif;
      color: black;
 }
  @media (min-width: 992px) {
@@ -19,6 +22,7 @@
      margin: 30px auto 30px auto;
 }
  p{
+     font-family: 'Lato', sans-serif;
      overflow: hidden;
 }
  .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -75,6 +79,7 @@
  .bg-green{
      background-color: #59b477;
 }
+
  .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.2s;
@@ -106,6 +111,9 @@
 }
  .btn{
      margin-bottom: 30px;
+}
+.navbar {
+     font-family: 'Work Sans', sans-serif;
 }
  #main {
      overflow:auto;
