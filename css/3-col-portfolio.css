@@ -7,10 +7,13 @@
  h4{
      font-family: 'Work Sans', sans-serif;
      color: black;
+     font-weight: 400;
 }
  h5{
      font-family: 'Work Sans', sans-serif;
      color: black;
+     font-weight: 400;
+
 }
  @media (min-width: 992px) {
      body {
@@ -24,6 +27,7 @@
  p{
      font-family: 'Lato', sans-serif;
      overflow: hidden;
+     font-weight: 400;
 }
  .carousel-control-prev-icon, .carousel-control-next-icon {
      height: 100px;
