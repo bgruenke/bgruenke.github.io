@@ -120,6 +120,7 @@
 }
 .navbar {
      font-family: 'Work Sans', sans-serif;
+     font-weight: 400;
 }
  #main {
      overflow:auto;
