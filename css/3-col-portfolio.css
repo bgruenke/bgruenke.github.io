@@ -122,6 +122,10 @@
      font-family: 'Work Sans', sans-serif;
      font-weight: 400;
 }
+
+.embed-responsive{
+  max-height: 500px;
+}
  #main {
      overflow:auto;
      padding-bottom:150px;

@@ -83,9 +83,10 @@
             <span class="sr-only">Next</span>
             </a>
          </div> -->
-        <div id="carouselExampleIndicators" class="carousel-inner">
-            <img class="img-fluid border" src="img/mealmatch/home.png" alt="Defualt calender view" width="100%" style="margin:auto;">
+        <div class="videoWrapper">
+          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/271956384?color=59b477&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
         </div>
+          <br><br>
         <div class="row">
             <div class="col col-9" align="left">
                 <h4>Flyflow Travel App</h4>
@@ -97,48 +98,128 @@
 
         <div class="row">
             <div class="col col-9">
-                <p> Often traveling can involve feelings of stress, anxiety, aaaaaaaaaaaaaaaaahhhhhhhhhhhhh</br>
-                    </br> At the University of Washington, on campus dining halls work with food delivery groups to transport leftover food to non-profit agencies but these groups have limited capacity and face numerous challenges, resulting in a large amount of food still going to compost.
+                <p> Flyflow is a travel application for making getting to the airport, and getting to your gate a more pleasant experience. A 12-week capstone project involving a full user centered design process of research, design, and design evaluation. Methods included an online survey, participatory design session, storyboarding, wireframing, usability testing, and creating high fidelity prototypes. My role on the project was to lead the research efforts as well as direct and edit the products video prototype. Additionally, I wireframed the security and transportation user flows.
                 </p>
-                <h5>Research Question</h5>
-                <p>How can a HCDE directed research group reduce the amount of food composted in the UW community while simultaneously feeding the food insecure population in Seattle?</p>
-                <h5>My Role</h5>
-                <p>My role in the research group was hybrid in nature. I was both on the video and the UX team. For my video role I acted in a creative support role storyboarding, script editing, and coordinating logistics such as equipment rentals. For my UX role, I helped finalize design components like the calendar and the chips used as clickable events. I also went into the field and tested the design with two different non-profit agencies moderating and note-taking for usability tests. Lastly, I did a ride-along contextual inquiry with a local food bank to observe how they handle food pickups.
+                <h5>Problem</h5>
+                <p>The user experience throughout a day of travel is often taxed with uncertainty, stress, unexpected changes, and frustration.</p>
+                <h5>Design Question</h5>
+                <p>How can we empower infrequent travelers with timely and relevant information that reduces the mental math, stress, and anxiety that is associated with their day of travel?</p>
+                <img src="img/flyflow/board.JPG" class="img-fluid border" alt="Flight board" />
+                <h5>Online Survey</h5>
+                <p>In order to pinpoint times and activities that cause the most stress during traveling we sent out an online survey to better scope the project. We also wanted to determine if participants wanted proactive or reactive notification systems. The primary goal of the survey was to recruit participants for the participatory design session we had planned to kickoff our design process with.
+                  <ul>
+                    <li>52/157 participants were infrequent travelers</li>
+                    <li>Sent survey out though seattle Facebook and Sub-Reddits</li>
+                    <li>Screener questions, likert scale, ranking, and free response</li>
+                    <li>75% selected before boarding as the most stressful time (before boarding, while on the plane and after boarding)</li>
+                    <li>63.5% favored reactive notification systems</li>
+                  </ul>
+                <h4>Infrequent Travelers</h4>
+                <p>The challenge of designing a better user experience for infrequent travelers first required us to define what an infrequent traveler was. </p>
+                <ul>
+                  <li>Familiar with technology and uses a smartphone</li>
+                  <li>Travels 3-5 times a year (not a business traveler!)</li>
+                </ul>
+                <p>Infrequent travelers aren’t 100% comfortable with traveling. <br> <br>These were some of the main pain points from our research findings:</p>
+                <p><b>Uncertainty:</b> “One of the biggest unknowns in travel takes place before you get to the airport” - survey participant.
+                  <br><br>
+                  <b>Being late:</b> “I always worry about being late. [...] I always check how long it takes to get there over and over since I’m anxious.” - survey participant.
+                  <br><br>
+                  <b>Lack of Control:</b> “An unfamiliar airport makes everything less comfortable” - survey participant.
+                  <br><br>
+                  <b>Security:</b> Going through security was an overall low point that generates feelings of annoyance, anxiety, and relief. </p>
+
+                <h5>Participatory Design Session</h5>
+                <img src="img/flyflow/travel_tasks.JPG" class="img-fluid border" alt="Tasks from Particpatory Design" />
+                <p>With these in mind, we conducted a participatory design session to validate these pain points and explore solutions. We asked participants to list out day of travel activities on sticky notes. Then we asked them to categorize them and sketch solutions to the problems presented. Lastly, we ranked the participants sketches and discussed problems surrounding travel.
+                  We came up with these three basic needs from the design session.
                 </p>
-                <h5>How it works</h5>
-                <p>UW dining halls serve hundreds of customers a day. Sometimes they have leftovers in the form of prepared food. Standard protocol calls for this food to be frozen and eventually composted if it does not get used. Mealmatch allows for a dining hall manager to setup reoccurring pickups or emergency pickups for non-profit agencies to use the leftover food. Student volunteers will be assigned by a student coordinator to transport the food from the dining hall to the non-profit agency. In our initial research we found non-profits can be understaffed and chaotic.
-                    </br>
-                    </br>
-                    All of this is coordinated through the Mealmatch website in the form of a calendar and request system. Throughout the entire process safety is prioritized. Delivery drivers are required to obtain safe food handling cards, training, rent a clean Ucar, and sign when food is picked up. The development of this system was funded by the UW Sustainability fund. The pilot for the delivery system will take place Spring 2018. Food is supplied by UW's Local Point Dining Hall and will be delivered to Union Gospel Mission and Compass Alliance Housing.</p>
+                <p>
+                  <b>Needs:</b>
+                </p>
+                <ul>
+                  <li>Guidance</li>
+                  <li>Time Management</li>
+                  <li>Airport Navigation</li>
+                </ul>
+                <h5>Sitemap</h5>
+                <p>The entire system</p>
+                  <a href="img/flyflow/sitemap.jpg" target="_blank">
+                    <img src="img/flyflow/sitemap.jpg" class="img-fluid border" alt="Site Map" />
+                  </a>
+                <h5>Sketching & Wireframes</h5>
+                <p> After conducting a survey, participatory design session, and a sitemap, we began sketching interfaces and solutions to the problems travelers faced.
+                We were able to create a mostly grey scale flow for booking transporation to the airport, choosing a security line, and searching and filtering for locations around the airport.
+                The system defaults to directing travelers towards their flight's gate. It works by automatically because it knows which flight you are on.</p>
+                  <img src="img/flyflow/b_sketch.png" class="img-fluid border" alt="sketches" />
+                  <a href="img/flyflow/wireframes.png" target="_blank">
+                      <img src="img/flyflow/wireframes.png" class="img-fluid border" alt="Wireframes" />
+                  </a>
+                <h5>Guerilla Usability Testing</h5>
+                  <p>Before we jumped into hi-fidelity mockups we wanted to make sure our designs were what travelers actually wanted or needed. The team was fortunate enough to have the opportunity to go to Seattle-Tacoma airport and conduct 8 quick guerilla usability studies. I moderated four of these. The tasks we asked participants to complete with our wireframes were: find transportation to the airport, choose a security line, navigate through the airport, and search for specific locations.</p>
+                  <img src="img/flyflow/usability_test.JPG" class="img-fluid border" alt="Usability Test" />
+                  <p>Participants were waiting at their gates for their flights to board when we asked them to test our wireframes. From doing this we were able to understand how users would use our app in-context. The largest takeaway was that participants preferred using the map instead of searching or filters. Our map had to be more robust in-order for participants to find value in it. </p>
+                  <h5>High Fidelity Mockups</h5>
+                  <a href="img/flyflow/process.png" target="_blank">
+                      <img src="img/flyflow/process.png" class="img-fluid border" alt="Design process" />
+                  </a>
+                  <p>All this testing lead us to create a refined prototype know as “Flyflow”. The app still allows users to schedule rides to the airport, displays information about security wait times, and helps travelers keep track of their time at the airport.
+                    By not focusing on search or filter functionality, we are able to focus on the maps functionality. Before finalizing these screens we did 4 usability tests with infrequent travelers. They gave us a variety of feedback that we decided to iterate on:
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col"></th>
+                          <th scope="col">Problem</th>
+                          <th scope="col">Solution</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Uncertainty if security wait times were the most up to date</td>
+                          <td>Add a refresh button to empower travelers to trust that the times are as up to date as possible</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Participants skipped over the alerts icon</td>
+                          <td>Add it to the top navbar along with the other app wide controls</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Lack of visual consistency in viewing the itinerary</td>
+                          <td>Move the itinerary to a bottom pull up rather than a pull down</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>Confusion on the travelers icon displayed on the map</td>
+                          <td>Use a more animated icon with colors that match Flyflow's design language</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    Thess changes were done to create a visual consistency across the experience as well as establish trust for travelers. Without evaluating the design, we might not have noticed these more nuanced changes that impact the overall user experience.
+                    You can view the full clickable prototype <a target="none" href="https://projects.invisionapp.com/share/6MKSOLL9YZW">here</a>.
+                  </p>
+                  <a href="img/flyflow/final_mockup.png" target="_blank">
+                      <img src="img/flyflow/final_mockup.png" class="img-fluid border" alt="Design process" />
+                  </a>
+                  <h5>Relection</h5>
 
-                <h5>Designs</h5>
-                <p>Here are some snapshots of the system and interfaces I worked on.</p>
-                <a href="img/mealmatch/calendar.png" target="_blank">
-                    <img src="img/mealmatch/calendar.png" class="img-fluid border" alt="Calendar Screen" />
-                </a>
-                <a href="img/mealmatch/emergency.png" target="_blank">
-                    <img src="img/mealmatch/emergency.png" class="img-fluid border" alt="Emergency Pickup Screen" />
-                </a>
-                <a href="img/mealmatch/mobile_screen.png" target="_blank">
-                    <img src="img/mealmatch/mobile_screen.png" class="img-fluid border" alt="Mobile Pickup Screen" />
-                </a>
-
-                <h5>Video</h5>
-                <p>Food waste is a global issue, and to spread a message of hope, we made a video to communicate our message. I helped Collin T. on the creative side of producing this video by script editing and storyboarding the scenes to save time shooting and editing.</p>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4DUuoD09bH4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
+                  <p>Rapid evaluation was helpful in informing designs and meaningful features can come from listening to user feedback. Sometimes it can be difficult balancing designer intuition and listening to user feedback. Often times users aren’t sure what they actually want until the experience is presented to them. This was especially found in the navigation aspect of the Flyflow. During the participatory design, travelers were psyched about navigation and wayfinding within an airport app but when we conducted later usability studies, participants were unsure if the wayfinding features would be useful since airports should be physically easy to navigate.  Furthermore, this revealed a flaw in our recruiting and map design. We prototyped Sea-tac airport but all of the participants we tested were familiar with Sea-tac airport. We are unsure how this would have impacted participants if the map was of a airport they had never been to before.</p>
+                  <img src="img/flyflow/poster.JPG" class="img-fluid border" alt="Capstone Poster" />
+                  <p>This could have been avoided if we had a more strict participant criteria or if we had a specific airport as a client. We could have been more aware of participant biases and circumstances. Every person has a different experience and outlook on traveling. </p>
+                  <img src="img/flyflow/teamwork.JPG" class="img-fluid border" alt="Teamwork" />
+                  <p>Participants gave us insightful feedback that an airport app that had the functionality of preparedness, time management, and navigation, might be most useful in large and confusing airports, international airports, or during long layovers.</p>
+                  <img src="img/flyflow/sketching.jpg" class="img-fluid border" alt="Sketching" />
+                  <p>Overall, this entire process was both exciting and grueling at times. Designing for travelers is personally very fascinating and I look forward to seeing how airline companies will improve the user experience of traveling in the future.</p>
             </div>
             <div class="col col-3" align="left">
                 <p>
-                    <a target="none" href="http://www.dailyuw.com/news/article_44c57650-0d3d-11e8-bd9b-fb83e712a3ce.html">Article from the Daily</a> </br>
+                    <a target="none" href="https://projects.invisionapp.com/share/6MKSOLL9YZW">Invision Prototype</a> </br>
                     Research, Design, Video Production </br>
-                    Figma, Usability testing, Contextual inquiry, Storyboarding
-                    <h4>Team</h4>Madison H.
-                    <br/>Irini S.
-                    <br/>Collin T.
-                    <br/>Srinthi L.
-                    <br/>Jessica S. </br>Ria A.</br> Meghna B.</br>Espen S.</br>Zubin C.</br>Joyce H.</br> Ariel L. </br>
+                    Sketch, Invision, Participatory Design, Usability testing
+                    <h4>Team</h4>Vrishti B.
+                    <br/>Andrey G.
+                    <br/>Karena V.
                 </p>
             </div>
 
@@ -169,6 +250,7 @@
         </container>
     </footer>
     <!-- Bootstrap core JavaScript -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>

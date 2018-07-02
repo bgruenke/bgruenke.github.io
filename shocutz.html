@@ -84,8 +84,9 @@
             </a>
          </div> -->
         <div class="videoWrapper">
-            <iframe src="https://player.vimeo.com/video/259117744" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/259117744?color=59b477&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
         </div>
+        <br><br>
         <div class="row">
             <div class="col col-9" align="left">
                 <h4>Shocutz, a Shortcut Keyboard for Designers</h4>
@@ -129,7 +130,7 @@
 4. Power cycle the Uno 
 5. Test buttons and uploaded sketch
 6. Short the Uno again
-7. Ppload Arduino-usbserial-uno.hex with Flip
+7. Upload Arduino-usbserial-uno.hex with Flip
 8. Power cycle the Uno
 9. See that the com port detected the Uno
 10. Rinse and repeat until the desired shortcuts and sketch is uploaded</pre> This process is not ideal, but it works. Once I got this process down, I began modifying the example Arduino sketch. It took a while to figure out which hexadecimal keys were for which keyboard keys. I managed to find some very good <a href="https://hcdeblog.files.wordpress.com/2018/03/hid_keyboard_keys.pdf" target="_blank" rel="noopener">documentation</a> on it.</p>
@@ -300,6 +301,7 @@ void releaseKey()
         </container>
     </footer>
     <!-- Bootstrap core JavaScript -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
