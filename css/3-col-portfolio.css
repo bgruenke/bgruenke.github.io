@@ -79,11 +79,11 @@
      -webkit-transition: box-shadow .4s ease-in; */
 }
  a:hover{
-     color: #747373;
+     color: #12ADEF;
      text-decoration: none;
 }
  .bg-green{
-     background-color: #59b477;
+     background-color: #12ADEF;
 }
 
  .card{
@@ -113,7 +113,7 @@
      right: -40px;
 }
  .about-text{
-     margin-top: 46px;
+
 }
  .btn{
      margin-bottom: 30px;
